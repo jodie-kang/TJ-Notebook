@@ -234,6 +234,19 @@ def regenerate(chat_history, system_prompt):
 <!-- 参考Hugging Muti Agent：https://deepwisdom.feishu.cn/wiki/MLILw0EdRiyiYRkJLgOcskyAnUh -->
 
 ## 设计思路
+
+确定Agents个数，每个Agents需要有action和role，例如：天机项目设置了3个Agents：
+1. qianbianzhe：千变者 以自己的身份回答问题
+- action：
+- role：
+2. ruyi：如意 给出针对回答的知识 并用md展示
+- action：
+- role：
+3. wendao：问道 分析用户需求
+- action：
+- role：
+
+
 给定人设并导入参考聊天话术、历史聊天语料进行聊天。
 根据当前状态和聊天与恋爱相关性等综合打分。给出当前回合的打分情况
 ## step1：
